@@ -1,0 +1,150 @@
+.home {
+  padding-top: 64px;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.95)),
+    repeating-linear-gradient(
+      45deg,
+      #0a0a0a 0px,
+      #0a0a0a 1px,
+      transparent 1px,
+      transparent 40px
+    );
+  border-bottom: 1px solid #111;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hero-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #444;
+  margin: 0;
+}
+
+.hero-title {
+  font-size: clamp(3.5rem, 12vw, 9rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0;
+  line-height: 1;
+}
+
+.hero-sub {
+  font-size: 0.8rem;
+  color: #555;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.hero-cta {
+  margin-top: 0.5rem;
+  padding: 0.85rem 2.5rem;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+}
+
+.hero-cta:hover { opacity: 0.85; }
+
+.home-featured {
+  padding: 5rem 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #555;
+  margin: 0;
+  font-weight: 400;
+}
+
+.section-header a {
+  font-size: 0.65rem;
+  color: #444;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  transition: color 0.2s;
+}
+
+.section-header a:hover { color: #fff; }
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1px;
+  background: #111;
+  border: 1px solid #111;
+}
+
+.products-grid > * {
+  background: #0a0a0a;
+}
+
+.home-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #111;
+}
+
+.info-block {
+  padding: 3rem 2.5rem;
+  border-right: 1px solid #111;
+}
+
+.info-block:last-child { border-right: none; }
+
+.info-block h3 {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.info-block p {
+  font-size: 0.8rem;
+  color: #444;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .home-info {
+    grid-template-columns: 1fr;
+  }
+  .info-block {
+    border-right: none;
+    border-bottom: 1px solid #111;
+  }
+}

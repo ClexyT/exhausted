@@ -1,0 +1,60 @@
+[
+  {
+    "id": "1",
+    "slug": "ejemplo-tenis-01",
+    "name": "Tenis Ejemplo 01",
+    "brand": "Nike",
+    "price": 2500,
+    "category": "tenis",
+    "status": "bajo-pedido",
+    "description": "Tenis en colorway exclusivo. Disponibles bajo pedido. Tiempo de entrega estimado 5-7 días hábiles.",
+    "sizes": ["6", "6.5", "7", "7.5", "8", "8.5", "9"],
+    "measurements": {
+      "largo": "28 cm",
+      "ancho": "10 cm"
+    },
+    "images": [],
+    "featured": true,
+    "createdAt": "2026-05-11"
+  },
+  {
+    "id": "2",
+    "slug": "ejemplo-hoodie-01",
+    "name": "Hoodie Ejemplo 01",
+    "brand": "Exhausted",
+    "price": 950,
+    "category": "hoodies",
+    "status": "disponible",
+    "description": "Hoodie oversize, tela gruesa 380gsm. Perfecta para el frío de la CDMX.",
+    "sizes": ["S", "M", "L", "XL"],
+    "measurements": {
+      "hombros": "58 cm",
+      "pecho": "62 cm",
+      "largo": "72 cm",
+      "manga": "65 cm"
+    },
+    "images": [],
+    "featured": true,
+    "createdAt": "2026-05-11"
+  },
+  {
+    "id": "3",
+    "slug": "ejemplo-camiseta-01",
+    "name": "Camiseta Ejemplo 01",
+    "brand": "Exhausted",
+    "price": 450,
+    "category": "camisetas",
+    "status": "disponible",
+    "description": "Camiseta heavyweight oversize. Drop shoulder, 100% algodón.",
+    "sizes": ["S", "M", "L", "XL"],
+    "measurements": {
+      "hombros": "54 cm",
+      "pecho": "58 cm",
+      "largo": "74 cm",
+      "manga": "25 cm"
+    },
+    "images": [],
+    "featured": false,
+    "createdAt": "2026-05-11"
+  }
+]
