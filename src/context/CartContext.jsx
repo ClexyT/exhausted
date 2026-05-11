@@ -43,7 +43,7 @@ export function CartProvider({ children }) {
   const count = items.reduce((sum, i) => sum + i.qty, 0)
 
   function sendToWhatsApp() {
-    const phone = '5255607300358'
+    const phone = '525560730358'
     const lines = items.map(
       i => `• ${i.name} | Talla: ${i.size} | Qty: ${i.qty} | $${(i.price * i.qty).toLocaleString('es-MX')}`
     )
@@ -54,7 +54,7 @@ export function CartProvider({ children }) {
       '',
       `*Total: $${total.toLocaleString('es-MX')} MXN*`,
       '',
-      '_(Envíame este mensaje para coordinar el pago y envío)_',
+      '(Envíame este mensaje para coordinar el pago y envío ♱)',
     ].join('\n')
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank')
   }
