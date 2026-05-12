@@ -10,9 +10,9 @@ export default function Home() {
     <main className="home">
       <section className="hero">
         <div className="hero-content">
-          <p className="hero-label">CDMX — Streetwear & Sneakers</p>
+          <p className="hero-label">Streetwear & Sneakers</p>
           <h1 className="hero-title">EXHAUSTED</h1>
-          <p className="hero-sub">Hype & StreetWear</p>
+          <p className="hero-sub neonText">Hype & StreetWear</p>
           <Link to="/catalogo" className="hero-cta">Ver catálogo</Link>
         </div>
       </section>

@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
 import Navbar from './components/Navbar'
 import Cart from './components/Cart'
+import PageTransition from './components/PageTransition'
 import Home from './pages/Home'
 import Catalog from './pages/Catalog'
 import ProductDetail from './pages/ProductDetail'
@@ -13,12 +14,14 @@ export default function App() {
       <BrowserRouter>
         <Navbar />
         <Cart />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalogo" element={<Catalog />} />
-          <Route path="/producto/:slug" element={<ProductDetail />} />
-          <Route path="/admin" element={<Admin />} />
-        </Routes>
+        <PageTransition>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/catalogo" element={<Catalog />} />
+            <Route path="/producto/:slug" element={<ProductDetail />} />
+            <Route path="/admin" element={<Admin />} />
+          </Routes>
+        </PageTransition>
       </BrowserRouter>
     </CartProvider>
   )

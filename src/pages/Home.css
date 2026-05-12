@@ -1,7 +1,12 @@
 .home {
   padding-top: 64px;
 }
-
+.neonText {
+  color: #fff;
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.6),
+    0 0 14px rgba(255,255,255,0.25);
+}
 .hero {
   min-height: 90vh;
   display: flex;
