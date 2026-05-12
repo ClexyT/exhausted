@@ -12,7 +12,7 @@ export default function Home() {
         <div className="hero-content">
           <p className="hero-label">CDMX — Streetwear & Sneakers</p>
           <h1 className="hero-title">EXHAUSTED</h1>
-          <p className="hero-sub">Reventa y drops exclusivos. Bajo pedido.</p>
+          <p className="hero-sub">Hype & StreetWear</p>
           <Link to="/catalogo" className="hero-cta">Ver catálogo</Link>
         </div>
       </section>
